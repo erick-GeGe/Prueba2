@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="contener p-4 container">
+    <div class="row">
+        <div class="col-md-3">
+            <h2 class='text-nowrap text-primary'>Registrar Cliente</h2>
+            <div class="card">
+                <div class="card-body">
+                    <form id="cliente_form">
+                        <div class="form-group">
+                            <input type="text" id="codigo" placeholder="codigo de cliente" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="nombre" placeholder="nombre de cliente" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="apellido_p" placeholder="apellido paterno de cliente"
+                                class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="apellido_m" placeholder="apellido materno de cliente"
+                                class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="sexo" placeholder="sexo de cliente" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="edad" placeholder="edad de cliente" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="direccion" placeholder="direccion de cliente" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="telefono" placeholder="telefono de cliente" class="form-control">
+                        </div>
+                        <button id="boton_id" class="btn btn-primary btn-block text-cemter" type="submit">Guardar
+                            cliente</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <h2 class='text-nowrap text-primary'>Mostrar clientes</h2>
+            <table class="table table-bordered table-sm" id="table_clientes">
+                <thead>
+                    <tr>
+                        <td>Codigo</td>
+                        <td>Nombre</td>
+                        <td>Apellido_p</td>
+                        <td>Apellido_m</td>
+                        <td>Sexo</td>
+                        <td>Edad</td>
+                        <td>Direccion</td>
+                        <td>Telefono</td>
+                    </tr>
+                </thead>
+                <tbody id="clientes">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

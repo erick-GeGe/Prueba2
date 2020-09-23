@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'onlineDocApp/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'onlineDocApp/css/style.css' %}">
+</head>
+
+<body>
+    <!-- INCIO  -->
+    <div class="text-center titulo">
+        <h1 class="container ">OnlineDoc</h1>
+    </div>
+    <div class="container-fluid navbar-inverse bg-inverse  aumentada">
+        <nav class="navbar navbar-toggleable-md container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand " href="#">ProyectoWeb</a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item {% if request.path == '/' %}active{% endif %}">
+                        <a class="nav-link" href="/">Inicio </a>
+                    </li>
+                    <li class="nav-item {% if request.path == '/emergencia_medica' %}active{% endif %}">
+                        <a class="nav-link" href="emergencia_medica">Emergencia medica</a>
+                    </li>
+                    <li class="nav-item {% if request.path == '/recibir_atencion_medica' %}active{% endif %}">
+                        <a class="nav-link" href="recibir_atencion_medica">Recibir atencion medica</a>
+                    </li>
+                    <li class="nav-item {% if request.path == '/recibir_receta' %}active{% endif %}">
+                        <a class="nav-link" href="recibir_receta">Recibir receta</a>
+                    </li>
+                    <li class="nav-item {% if request.path == '/reservar_cita' %}active{% endif %}">
+                        <a class="nav-link" href="reservar_cita">Reservar cita</a>
+                    </li>
+                    <li class="nav-item {% if request.path == '/solicitar_atencion_fisica' %}active{% endif %}">
+                        <a class="nav-link" href="solicitar_atencion_fisica">Solicitar atencion fisica</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+    
+    <!-- Contenido propio de cada pagina -->
+    <div class="fondo-dark py-5 my-0">
+
+        {% block content %}
+        
+        {% endblock %}
+    </div>
+ 
+    <!-- FOOTER -->
+    <div class="final my-0">
+        <footer class="footer text-xs-center container">
+            <p>OnlineDoc Proyecto de Ingenieria de Software</p>
+            <p>Numero para contratos 987654321</p>
+        </footer>
+    </div>
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="{% static 'onlineDocAppjs/bootstrap.min.js' %}"></script>
+</body>
+
+</html>
+
+
+

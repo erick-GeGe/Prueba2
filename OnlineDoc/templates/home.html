@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+    <div class="container fondo-home">
+        <div class="bienvenida text-dark h3 p-5">
+
+            <p>
+                Aplicacion para poder estar al tanto de tu salud desde la comodidad de tu hogar o donde sea 
+                que te encuentres 
+            </p><br>
+            <p>
+                El sistema OnlineDoc incluye una plataforma Web y tambien una aplicacion para poder instalar
+                en cualquier celular con los requisitos mınimos. 
+            </p>
+            
+        </div>
+        <div class="main-img container py-5">
+            <img src="{% static 'onlineDocApp/img/inicio.png' %}" class="img-fluid" alt="Responsive image">
+        </div>
+        <div class="descripcion text-secondary h5 p-3 ">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam voluptatibus maxime sapiente omnis culpa assumenda, modi deserunt suscipit aliquid est iste ipsum quam, doloribus aliquam praesentium dignissimos, unde minus nesciunt?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus molestias quas eos consequuntur, reiciendis atque dolorum, aperiam, quia quasi veritatis nesciunt! Possimus nam cumque quod ducimus, pariatur sunt ipsa amet.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis error dolore blanditiis odit est consequatur itaque! Inventore impedit blanditiis delectus laboriosam ratione quidem vel et, eaque dolorem neque laudantium enim.
+
+            </p>
+        </div>
+    </div>
+
+
+{% endblock %}
