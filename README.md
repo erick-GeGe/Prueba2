@@ -22,7 +22,11 @@ Guia de como usar git y como poder subirlo a github para poder trabajar en equip
 
 ## Sonar Scanner
  ![alt text](https://github.com/erick-GeGe/Prueba2/blob/master/Screenshot_20200924_110209.png) 
+ 
+ 
  ![alt text](https://github.com/erick-GeGe/Prueba2/blob/master/Screenshot_20200924_110923.png) 
+ 
+ 
  ![alt text](https://github.com/erick-GeGe/Prueba2/blob/master/Screenshot_20200924_111036.png) 
  
 ### Referencias
